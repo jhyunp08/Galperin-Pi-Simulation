@@ -276,7 +276,7 @@ class SettingWindow(Frame):
         for i in range(len(points)-1):
             l = self.canvas.create_line(points[i][0], points[i][1], points[i+1][0], points[i+1][1], fill=self.style_dict["line"])
             self.diagram[1].append(l)
-        print(f'm2/m1={m2}: N={len(points)-1}')
+        print(f'm2/m1={m2}: estimated \u03a0={sum(1 for p in range(len(points)) if points[p] != points[p-1]) - 1}')
         self.update()
 
 
