@@ -1,7 +1,9 @@
 # Galperin-Pi-Simulation
 
-A simple simulation code for Gregory Galperin's paper: 
-['Playing Pool with π (The Number π From a Billiard Point of View)'](https://www.maths.tcd.ie/~lebed/Galperin.%20Playing%20pool%20with%20pi.pdf).
+A simple simulation code for Gregory Galperin's paper:    
+['Playing Pool with π (The Number π From a Billiard Point of View)'](https://www.maths.tcd.ie/~lebed/Galperin.%20Playing%20pool%20with%20pi.pdf).   
+
+Download or copy [Galperin-Pi-Simulation/Simulator.py](https://github.com/jhyunp08/Galperin-Pi-Simulation/blob/main/Simulator.py) and test it.
 
 
 ## Requirements
