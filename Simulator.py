@@ -129,10 +129,12 @@ class SimWindow(Frame):
         self.run = True
         self.dt = 0.0004
         self.canvas = None
-        self.count = Label(text="Collisions: 0", width=28, height=4, bg=self.style_dict["bg"], fg=self.style_dict["fg"])
+        f = tkFont.Font()
+        f.config(family='times', size=20)
+        self.count = Label(text="Collisions: 0", width=28, height=4, font=f, bg=self.style_dict["bg"], fg=self.style_dict["fg"])
         self.wall = [None, None]
         self.create_canvas()
-        self.count.place(x=500, y=20)
+        self.count.place(x=450, y=20)
 
         self.sq1 = None
         self.sq2 = None
