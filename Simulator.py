@@ -237,7 +237,7 @@ class SettingWindow(Frame):
         self.label_massEntry.place(x=10, y=60)
         self.massEntry = Entry(self, width=15, fg=self.style_dict["fg"], bg=self.style_dict["ment_bg"])
         self.massEntry.insert(0, "100")
-        self.massEntry.place(x=50, y=58)
+        self.massEntry.place(x=60, y=65)
 
         self.canvas = Canvas(self, width=280, height=280,
                              bg=self.style_dict["canvas_bg"], highlightthickness=0)
