@@ -51,7 +51,15 @@ class App(Tk):
                                         "fg": "white", "pbut_bg": "gray19", "ment_bg": "gray17", "canvas_bg": "black", "axes": "#bbbbbb", "circle": "white", "point":"#faf0a8", "line":"#b0d9e3"}],
                               "dark2": [{"bg": "gray6", "fg": "white", "wall": "#b2b2b2", "sq1": "#87c7e8", "sq2": "#199e91"},
                                         {"bg": "gray15", "highlightbackground": "#404040", "highlightthickness": 2,
-                                         "fg": "white", "pbut_bg": "gray", "ment_bg": "gray9", "canvas_bg": "black", "axes": "#cccccc", "circle": "#b0d9e3", "point":"#efe959", "line":"#999999"}]}
+                                         "fg": "white", "pbut_bg": "gray", "ment_bg": "gray9", "canvas_bg": "black", "axes": "#cccccc", "circle": "#b0d9e3", "point":"#efe959", "line":"#999999"}]
+                             
+                              "Korean Edition": [{"bg": "blue", "fg": "red", "wall": "#f01313", "sq1": "#9e1919", "sq2": "yellow"},
+                                        {"bg": "#f01313", "highlightbackground": "#404040", "highlightthickness": 2,
+                                         "fg": "black", "pbut_bg": "blue", "ment_bg": "blue", "canvas_bg": "blue", "axes": "red", "circle": "#b0d9e3", "point":"purple", "line":"black"}]      
+                                         
+                                        }
+                             
+                             
         self.display_mode = "dark2"
 
         self.sim_win = SimWindow(self)
@@ -67,6 +75,7 @@ class App(Tk):
         display_mode.add_command(label="Bright", command=lambda: self.change_display_mode("bright"))
         display_mode.add_command(label="Dark1", command=lambda: self.change_display_mode("dark1"))
         display_mode.add_command(label="Dark2", command=lambda: self.change_display_mode("dark2"))
+        display_mode.add_command(label= "Korean Edition", command=lambda: self.change_display_mode("Korean Edition"))
         displayMenu.add_cascade(label="Mode", menu=display_mode)
         self.menu.add_cascade(label="Display", menu=displayMenu)
 
